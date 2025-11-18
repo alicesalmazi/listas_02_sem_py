@@ -1,0 +1,5 @@
+A ciência da computação envolve algoritmos e estruturas de dados.
+Algoritmos eficientes são essenciais para otimizar o tempo de processamento.
+Uma estrutura de dados bem escolhida pode fazer uma grande diferença.
+Estudar algoritmos complexos ajuda a resolver problemas.
+A busca em texto usa um índice invertido.

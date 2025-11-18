@@ -1,0 +1,14 @@
+INFO|2025-11-17 09:00:01|Conexão estabelecida com sucesso.
+WARN|2025-11-17 09:00:05|Cache quase cheio, limpeza necessária.
+ERROR|2025-11-17 09:00:10|Falha ao processar pagamento do usuário 101.
+DEBUG|2025-11-17 09:00:15|Variável 'x' lida como 5.
+INFO|2025-11-17 09:00:20|Usuário 205 logado.
+ERROR|2025-11-17 09:00:25|Erro de timeout na API externa.
+DEBUG|2025-11-17 09:00:30|Função 'auth_check' retornou TRUE.
+ERROR|2025-11-17 09:00:35|Arquivo de configuração não encontrado.
+WARN|2025-11-17 09:00:40|Tentativa de acesso com credenciais antigas.
+ERROR|2025-11-17 09:00:45|Banco de dados offline.
+INFO|2025-11-17 09:00:50|Relatório gerado em 0.5s.
+ERROR|2025-11-17 09:00:55|Memória insuficiente para a operação.
+WARN|2025-11-17 09:01:00|Taxa de requisição excedida.
+ERROR|2025-11-17 09:01:05|Permissão negada ao diretório '/tmp/data'.
