@@ -23,24 +23,68 @@
 # Um atleta pode subir a escada dando 1 ou 2 passos de cada vez. Dado o número de degraus, crie uma função recursiva que retorne de quantas formas diferentes ele pode subir.
 # 👉 Exemplo: Entrada 4 → Saída 5.
 
-def escadas():
-    pass
+# def escadas(entrada: int) -> int:
+#     if entrada == 1:
+#         return 1
+#     elif entrada == 2:
+#         return 2
+#     else:
+#         return escadas(entrada - 1) + escadas(entrada - 2)
+    
+# print(escadas(5))
 
 # 4. Explorando Diretórios
 # Um sistema de backup precisa contar quantos arquivos existem em um conjunto de pastas, que podem conter outras pastas recursivamente. Simule isso com listas aninhadas, onde uma string é um arquivo e uma lista é uma pasta.
 # 👉 Exemplo: ["a.txt", ["b.txt", "c.txt"]] → Saída 3.
 
+# def diretorios(linhas: list) -> int:
+#     contador = 0
+#     for i in linhas:
+#         if isinstance(i, str):
+#             contador += 1
+#         elif isinstance(i, list):
+#             contador += diretorios(i)
+#     return contador
+
+# print(diretorios(["a.txt", ["b.txt", "c.txt"], [["b.txt", "c.txt"], "b.txt", "c.txt"]]))
+
 # 5. Contagem Regressiva com Alerta
 # Um foguete faz uma contagem regressiva antes de decolar. Implemente uma função recursiva que imprima os números de n até 0 e ao final escreva "Decolar!".
 # 👉 Entrada: 5 → Saída: 5, 4, 3, 2, 1, 0, Decolar!.
+
+# def contagemRegressiva(entrada: int) -> str:
+#     string = ""
+#     string += f"{entrada}, " + contagemRegressiva(entrada - 1) if entrada > 0 else f"{entrada}, Decolar!."
+#     return string
+
+# print(contagemRegressiva(5))
 
 # 6. Verificação de Palíndromo
 # Um sistema de mensagens precisa verificar se a palavra enviada é um palíndromo. Crie uma função recursiva que retorne True ou False.
 # 👉 Exemplo: "radar" → True.
 
+# def palindromo(palavra: str, posicao: int = 0) -> bool:
+#     if palavra[posicao] == palavra[-posicao]:
+#         posicao += 1
+#         palindromo(palavra, posicao)
+#     else:
+#         return False
+#     return True
+        
+# print(palindromo("radar"))
+
 # 7. Fatorial com Explicação Passo a Passo
 # Um professor pediu que você mostre como o fatorial é construído. Crie uma função recursiva que mostre cada multiplicação até o resultado final.
 # 👉 Entrada: 5 → Saída: "5 * 4 * 3 * 2 * 1 = 120".
+
+def fatorial(entrada: int) -> str:
+    stringSaida = ""
+    valor = entrada
+    
+    stringSaida += f"{entrada} * " + fatorial(entrada - 1) if entrada > 1 else f"{entrada}"
+    return stringSaida
+
+print(fatorial(5))
 
 # 8. Soma dos Dígitos de um Número
 # Um caixa eletrônico precisa verificar a soma dos dígitos de um número de conta. Crie uma função recursiva que faça essa soma.
